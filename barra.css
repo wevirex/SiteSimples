@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.barra-itens {
+    background: linear-gradient(#debb8d, #daa84b);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.barra-itens ul {
+    list-style: none;
+    display: flex;
+}
+
+.item-principal {
+    position: relative;
+    margin: 0 50px;
+}
+
+.item-principal a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.subitens {
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: linear-gradient(to bottom, #daac57, #daa84b);
+    list-style: none;
+    padding: 5px;
+    width: 200px;
+    z-index: 2;
+    line-height: 1.5;
+    flex-direction: column;
+    align-items: center;
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    
+}
+
+.subitens a{
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: normal;
+   
+}
+
+.item-principal:hover .subitens {
+    display: block;
+    top: calc(100% + 0px);
+    max-height: 100px;
+}
+
+.item-principal a:hover {
+    color: #000000;
+
+
+}
+.login {
+    position: absolute;
+    top: 30%; 
+    right: 100px;
+}
+
+.login a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.deslogar    {
+    display: none;
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: linear-gradient(to bottom, #daac57, #daa84b);
+    list-style: none;
+    padding: 10px;
+    width: 200px;
+    z-index: 1;
+    line-height: 1.5;
+    flex-direction: column;
+    align-items: center; 
+    
+}
+
+.deslogar a{
+    width: 100%;
+    text-align: center!important;
+    margin-bottom: 10px;
+}
+
+.login:hover .deslogar {
+    display: block;
+}
+
+.deslogar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.login a:hover {
+    color: #000000;
+}
